@@ -1,0 +1,490 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: url("ImagenesparaFondo/presentacion.jpg");
+    background-repeat: no-repeat;
+    background-position:top;
+    top: 0%; 
+    left: 0%;  
+    bottom:100%; 
+    right: 100%;
+    margin: 0;
+}
+
+@media only screen and (min-width: 576px) and (max-widht: 1400px) {
+    body{
+        background-image: url("ImagenesparaFondo/presentacion.jpg");
+        background-repeat: no-repeat;
+        background-position:top;
+        width: 100%;
+    }
+}
+
+.css-typing{
+    text-align: left;
+    font-family: 'Special Elite', cursive;
+    font-size: 3rem;
+    padding: 150px 150px 150px 20px;
+}
+
+.css-typing p {
+    border-right: .10em solid rgba(0, 0, 0, 0.342);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.css-typing p:nth-child(1) {
+    width: 15em;
+    -webkit-animation: type 5s steps(40, end), blink .5s step-end infinite alternate;
+    animation: type 5s steps(40, end), blink .5s step-end infinite alternate;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+h2{
+    color: rgb(255, 0, 0);
+    text-align: left;
+    font-family: 'Special Elite', cursive;
+    padding: 50px 0px 50px 0px;
+    margin: 25px 100px 25px 100px;
+}
+
+
+h3{
+    color: rgb(58, 50, 50);
+    text-align:center;
+    padding: 15px 0px 15px 0px;
+}
+
+h4{
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.main{
+    padding-top: 05px;
+}
+
+.navbar-nav{
+    margin-left: 350px;
+}
+
+#Menuprincipal{
+    margin: 0;
+    padding: 0;
+}
+
+#presentacion{
+    width: 100vw;
+    display: grid;
+    row-gap: 5px;
+    column-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4 1fr);
+}
+
+
+.titulosPersonales{
+    color:whitesmoke;
+    font-family: 'Special Elite', cursive;
+    font-size: 1rem;
+    background-image: url("ImagenesparaFondo/fibradecarbon.png");
+    background-position:top;
+    padding: 25px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 576px) and (max-widht: 1400px) {
+    .titulosPersonales{
+        color:whitesmoke;
+        font-family: 'Special Elite', cursive;
+        font-size: 1rem;
+        background-image: url("ImagenesparaFondo/fibradecarbon.png");
+        background-position:top;
+        padding: 25px;
+        text-align: center;
+    }
+}
+
+#principal{
+    width: 100vw;
+    padding: 75px;
+}
+
+
+#descripcion{
+    padding: 56px 0px 56px 0px;
+    background-color: rgba(245, 245, 245, 0.808);
+    width: 100vw;
+    display: grid;
+    row-gap: 5px;
+    column-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4 1fr);
+}
+
+@media only screen and (max-width: 600px) {
+    #descripcion{
+        background-color:rgb(166, 166, 189);
+        width: 100%;
+        align-items: center;
+        text-align: center; 
+    }
+}
+
+.descripcionTexto{
+    font-family: 'Special Elite', cursive;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    #descripcion{
+        width: 100%;
+        text-align: center; 
+    }
+}
+
+#fraseCitada{
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+    color: rgba(7, 7, 7, 0.411);
+    font-size: 2rem;
+    width: 100vw;
+    background-color:rgba(245, 245, 245, 0.801);
+}
+
+@media only screen and (max-width: 600px) {
+    #fraseCitada{
+        text-align: center;
+        font-family: 'Special Elite', cursive;
+        color: rgb(0, 0, 0);
+        font-size: 1rem;
+        width: 100%;
+        background-color:rgba(245, 245, 245, 0.801);
+        align-items: center;
+    }    
+}
+
+
+#historia{
+    background-image: url("ImagenesparaFondo/manchados.png");
+    background-repeat: no-repeat;
+    background-position:right;
+}
+
+@media only screen and (min-width: 576px) and (max-widht: 1400px) {
+    #historia {
+        background-image: url("ImagenesparaFondo/manchados.png");
+        background-repeat: no-repeat;
+        background-position:right;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+#detalleTrayectoria{
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    margin: 0px;
+    padding-top: 25px;
+}
+
+table, tr,th,td{
+    background-color: whitesmoke;
+    margin: 25px 50px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.web{
+    color: rgba(255, 0, 0, 0.87);
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+    font-size: 1,5rem;
+}
+
+.ux{
+    color: rgba(255, 0, 0, 0.87);
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+    font-size: 1,5rem;
+}
+
+.licenciatura{
+    color: rgba(255, 0, 0, 0.87);
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+    font-size: 1,5rem;
+}
+
+
+#detalleEducacion{
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    margin: 0px;
+}
+
+
+#skills{
+    background-image: url("ImagenesparaFondo/mujerfondo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media only screen and (min-width: 576px) and (max-widht: 1400px) {
+    #skills {
+        background-image: url("ImagenesparaFondo/mujerfondo.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+#skillsSeccion{
+    width: 20%;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+.h4{
+    color: rgba(0, 0, 0, 0.493);
+    font-family: 'Special Elite';
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+.h4-2{
+    color: rgba(0, 0, 0, 0.849);
+    text-align: center;
+    font-family: 'Special Elite';
+    font-size: 2rem;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+.fondo-claro{
+    background-color: rgba(245, 245, 245, 0.699);
+}
+
+.centrado{
+    text-align: center;
+}
+
+
+
+#contacto{
+    text-align: center;
+    padding: 10px;
+}
+#redes{
+    text-align: center;
+    padding: 10px;
+}
+
+#multimedia{
+    border: 2px solid black;
+    height: 350px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+}
+
+#video{
+    align-content: center;
+    width: 80%;
+    margin: 10px;
+}
+
+@media only screen and (min-width: 576px) and (max-widht: 1400px) {
+    #multimedia {
+        align-items: center;
+        text-align: center;
+        order: none;
+        margin: 25px 50px;
+        display: flex;
+        flex-direction:column;
+        
+    }
+}
+
+
+@media only screen and (min-width: 576px) and (max-widht: 1400px){
+    #video {
+        display: inline-block;
+        text-align: center;
+        width: 100vw;
+        padding: 10px;
+        margin: 10px 75px;
+    }    
+}
+
+.logonegro{
+    padding: 5px;
+    margin: 5px;
+    float:left;
+    width: 90px;
+    height: 115px;
+}
+
+
+@media only screen and (max-width: 600px){
+    #skillSeccion{
+        background-color:rgb(208, 208, 218);      
+    }    
+}
+
+@media only screen and (max-width: 600px){
+    #skillSeccionHard{
+        background-color:rgb(208, 208, 218);      
+    }    
+}
+
+
+.behance{
+   padding: 25px;
+   text-align: center;
+}
+
+
+@media only screen and (max-width: 767px){
+    #tarjetasPersonales{
+        text-align: center;
+        margin: 15px 400px;
+        display: flex;
+        flex-direction:column;
+    }    
+}
+
+#tarjetaConLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+@media only screen and (max-width: 767px){
+    #tarjetaConLogo{
+        border: 1px solid red;
+        align-items: center;
+        justify-content: center;
+    }    
+}
+
+#contacto{
+    height: 300px;
+    background-image: url(ImagenesparaFondo/concrete-texture.png);
+    width: 100%;
+    display: grid;
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-columns: 50% 50%;
+}
+
+.trabajemos{
+    color: red;
+    font-family: 'Special Elite', cursive;
+    font-size:x-large;
+    padding: 40px 0px 10px 0px;
+    margin: 35px 100px 5px 100px;
+
+}
+
+
+.casillero{
+    font-size: medium;
+    text-align: center;
+}
+
+.casillero input {
+    border-radius: 20px;
+    border-color: rgba(0, 0, 0, 0.692);
+    width: 250px;
+    text-align: center;
+    align-items: center;
+}
+
+.casillero button {
+    height: 30px;
+    width: 90px;
+    border-radius: 30px;
+    border: none;
+    background-image: url(ImagenesparaFondo/fibradecarbon.png);
+    color: whitesmoke;
+    text-align: center;
+    align-items: center;
+    margin: 5px;
+}
+
+
+.nombre{
+    color: red;
+    font-family: 'Special Elite', cursive;
+    padding: 40px 0px 10px 0px;
+    margin: 5px 100px 5px 100px;
+
+}
+
+@media screen and (min-width: 576px){
+    #contacto .myname {
+        font-size: x-large;
+        margin-top: 80px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 576px){
+    #contacto .my_contact {
+        font-size: medium;
+        margin-top: 20px;
+        text-align: center;
+    }
+}
